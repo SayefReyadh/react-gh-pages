@@ -24,15 +24,9 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/about-me">
-            <AboutMe />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
