@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
@@ -23,7 +23,7 @@ function App() {
           </ul>
         </nav>
 
-        <Switch>
+        <Routes>
           <Route path="/about-me">
             <AboutMe />
           </Route>
@@ -33,7 +33,7 @@ function App() {
           <Route path="/">
             <Home />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );
