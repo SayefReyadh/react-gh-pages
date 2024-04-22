@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-gh-pages">
       <div className="App">
         <nav>
           <ul>
